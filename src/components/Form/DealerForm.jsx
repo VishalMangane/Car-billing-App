@@ -111,6 +111,7 @@ const CarDealerForm = () => {
           <TextField
             label="First Name"
             fullWidth
+            required
             value={firstName}
             onChange={(e) => setFirstName(e.target.value)}
           />
@@ -119,6 +120,7 @@ const CarDealerForm = () => {
           <TextField
             label="Last Name"
             fullWidth
+            required
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
           />
@@ -128,6 +130,7 @@ const CarDealerForm = () => {
             label="Email"
             type="email"
             fullWidth
+            required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
@@ -137,6 +140,7 @@ const CarDealerForm = () => {
             label="Contact Number"
             type='number'
             fullWidth
+            required
             InputLabelProps={{
               shrink: true,
             }}
@@ -149,6 +153,7 @@ const CarDealerForm = () => {
           <TextField
             label="Billing Address"
             fullWidth
+            required
             multiline
             rows={3}
             value={billingAddress}
